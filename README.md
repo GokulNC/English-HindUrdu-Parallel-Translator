@@ -2,6 +2,9 @@
 
 A simple playground to understand & learn the subtle differences in the dialect-pair Hindi & Urdu.
 
+The deployed demo application is available here:  
+https://share.streamlit.io/gokulnc/english-hindurdu-parallel-translator/app.py
+
 ## Installing dependencies
 
 0. Ensure you have Python 3.6+ installed
