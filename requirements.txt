@@ -1,8 +1,6 @@
-cython
-
 # googletrans
 google-trans-new
 
-git+https://github.com/libindic/indic-trans
+git+https://github.com/GokulNC/indic-trans
 
 streamlit
