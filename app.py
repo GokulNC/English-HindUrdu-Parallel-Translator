@@ -23,7 +23,7 @@ def write_matrix(outputs):
     |--|--|--|
     |DevaNāgarī|**{outputs['hi']}**|{outputs['u2h']}|
     |PersoArabic|{outputs['h2u']}|**{outputs['ur']}**|
-    |Latin (Approx)|{outputs['h2e']}|{outputs['u2e']}|
+    |Roman (Approx)|{outputs['h2e']}|{outputs['u2e']}|
     '''
     st.markdown(table_md)
 
@@ -56,8 +56,20 @@ def write_footer():
         - Hindi-Urdu is the [third most spoken language in the world](https://www.ethnologue.com/guides/ethnologue200) with more than 800 million speakers.
     ''')
 
+def production_mode():
+    # Src: discuss.streamlit.io/t/how-do-i-hide-remove-the-menu-in-production/362
+    hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    return
+
 if __name__ == '__main__':
     st.set_page_config(page_title='English-HindUrdu Translator', page_icon='☮️', layout='wide')
+    production_mode()
     write_header()
     write_ui()
     write_footer()
