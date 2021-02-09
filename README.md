@@ -16,6 +16,11 @@ https://share.streamlit.io/gokulnc/english-hindurdu-parallel-translator/app.py
 streamlit run app.py
 ```
 
+## Note
+
+- Please raise an issue here on this repo if the translator doesn't work.
+- Use [this discussion thread](https://discuss.streamlit.io/t/hindurdu-translator-learn-hindi-to-urdu-or-urdu-to-hindi-yourself/9681) for other ideas or improvement.
+
 ## Credits
 
 - Library for Translation: [google_trans_new](https://github.com/lushan88a/google_trans_new) (Fork of [googletrans](https://github.com/ssut/py-googletrans))

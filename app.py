@@ -15,7 +15,10 @@ def get_converters():
 
 def write_header():
     st.title('English-HindUrdu Parallel Translator')
-    st.markdown('A simple playground to understand & learn the subtle differences in the dialect-pair Hindi & Urdu.')
+    st.markdown('''
+        - A simple playground to understand & compare the subtle differences in the dialect-pair Hindi & Urdu.  
+        - Will be useful to learn Urdu if you already know Hindi, or learn Hindi if you already know Urdu.
+    ''')
 
 def write_matrix(outputs):
     table_md = f'''
@@ -62,6 +65,7 @@ def production_mode():
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
+    a[class^="viewerBadge_container*"]  {visibility: hidden;}
     </style>
     """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
