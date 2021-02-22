@@ -1,4 +1,4 @@
-# English HindUrdu Parallel Translation Playground
+# English HindiUrdu Parallel Translation Playground
 
 A simple playground to understand & learn the subtle differences in the dialect-pair Hindi & Urdu.
 
