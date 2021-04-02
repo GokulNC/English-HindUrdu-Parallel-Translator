@@ -5,7 +5,7 @@ def get_converters():
     from google_trans_new import google_translator
     from indictrans import Transliterator
     converters = {
-        'g_translator': google_translator(url_suffix="pk"),
+        'g_translator': google_translator(url_suffix="com.pk"),
         'hi2ur': Transliterator(source='hin', target='urd', rb=False),#, build_lookup=True),
         'ur2hi': Transliterator(source='urd', target='hin', rb=False),#, build_lookup=True),
         'hi2en': Transliterator(source='hin', target='eng', rb=False),#, build_lookup=True),
@@ -31,7 +31,7 @@ def write_matrix(outputs):
     st.markdown(table_md)
 
 def write_ui():
-    eng_txt = st.text_input('Enter English sentence below and hit Enter', value='I am an Indian who speaks Urdu.')
+    eng_txt = st.text_input('Enter English sentence below and hit Enter', value="India's national language Hindi, and Pakistan's national language Urdu are almost the same.")
     if not eng_txt:
         return
     converters = get_converters()
@@ -49,14 +49,15 @@ def write_footer():
     st.markdown('''
         ### Note
         
-        - The cells in bold are the original translations.
-        - The cross-script transliterations may not be exact.
+        - The cells in bold are the Google translations.
+        - The cross-script conversions may not be accurate.
         - This work is [open-sourced here](https://github.com/GokulNC/English-HindUrdu-Parallel-Translator).
         
         ### Interesting Facts
         
-        - Hindi and Urdu together is a single same spoken language called [Hindawi](https://en.wikipedia.org/wiki/Hindustani_language), but still unfortunately divided in reality because of communal (🕉️-☪️) and political (🇮🇳-🇵🇰) reasons.
+        - Hindi and Urdu together was a single same spoken language called [Hindustani](https://en.wikipedia.org/wiki/Hindustani_language), but now unfortunately divided because of communal (🕉️-☪️) and political (🇮🇳-🇵🇰) reasons.
         - Hindi-Urdu is the [third most spoken language in the world](https://www.ethnologue.com/guides/ethnologue200) with more than 800 million speakers.
+        - To learn about Hindi-Urdu script conversion, [check this paper](http://www.learnpunjabi.org/pdf/paper248.pdf).
     ''')
 
 def production_mode():
@@ -65,7 +66,6 @@ def production_mode():
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    a[class^="viewerBadge_container*"]  {visibility: hidden;}
     </style>
     """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
