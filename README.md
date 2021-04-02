@@ -24,5 +24,8 @@ streamlit run app.py
 ## Credits
 
 - Library for Translation: [google_trans_new](https://github.com/lushan88a/google_trans_new) (Fork of [googletrans](https://github.com/ssut/py-googletrans))
+  - This free API does not give high quality results
 - Library for Transliteration: [Indic-Trans](https://github.com/libindic/indic-trans)
+  - For approximate Hindi-Urdu Script conversion
 - Library for Web UI: [StreamLit](https://docs.streamlit.io/)
+  - For easy and free hosting on *Streamlit Sharing*
