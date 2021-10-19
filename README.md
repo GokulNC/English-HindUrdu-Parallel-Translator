@@ -1,4 +1,4 @@
-# English HindiUrdu Parallel Translation Playground
+# English to Hindi-Urdu Parallel Translation Playground
 
 A simple playground to understand & learn the subtle differences in the dialect-pair Hindi & Urdu.
 
@@ -23,7 +23,7 @@ streamlit run app.py
 
 ## Credits
 
-- Library for Translation: [google_trans_new](https://github.com/lushan88a/google_trans_new) (Fork of [googletrans](https://github.com/ssut/py-googletrans))
+- [Library for Google Translation](https://github.com/UlionTse/translators)
   - This free API does not give high quality results
 - Library for Transliteration: [Indic-Trans](https://github.com/libindic/indic-trans)
   - For approximate Hindi-Urdu Script conversion

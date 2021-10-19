@@ -1,5 +1,4 @@
-# googletrans
-google-trans-new
+translators
 
 git+https://github.com/libindic/indic-trans
 
